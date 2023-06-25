@@ -32,7 +32,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 ```
 ## Spring Security: Exception Handling
 
-![Exception Handling]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/eleonv/security-rol-back/blob/main/raw/AccessDeniedHandling.png))
+![Exception Handling](https://github.com/eleonv/security-rol-back/blob/main/raw/AccessDeniedHandling.png)
 
 
 Las excepciones personalizadas se lanzará si:
