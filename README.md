@@ -1,4 +1,4 @@
-# Spring security basic
+# Spring security con roles
 Proyecto spring boot usando spring security
 
 ## Configuración SecurityConfiguration
