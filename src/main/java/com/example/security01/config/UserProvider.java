@@ -24,8 +24,8 @@ public class UserProvider implements UserDetailsService {
         return org.springframework.security.core.userdetails.User//
                 .withUsername(username)//
                 .password(appUser.getPassword())//
-                //.authorities(appUser.getRoles())//
-                .authorities("ADMIN")//
+                .authorities(appUser.getRoles())//
+                //.authorities("ADMIN")//
                 .accountExpired(false)//
                 .accountLocked(false)//
                 .credentialsExpired(false)//

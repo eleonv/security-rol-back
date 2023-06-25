@@ -12,6 +12,9 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
     http.authorizeRequests(x -> x
             .requestMatchers("/").permitAll()
             .requestMatchers("/api/v1/usuarios/autenticar").permitAll()
+            .requestMatchers("/api/v1/usuarios/listar").hasAuthority(Constante.ROL_ADMIN)
+            .requestMatchers("/api/v1/usuarios/registrar").hasAuthority(Constante.ROL_ADMIN)
+            .requestMatchers("/api/v1/usuarios/validar").hasAuthority(Constante.ROL_USER)        
             .anyRequest().authenticated());
 
     http.exceptionHandling(x->x.authenticationEntryPoint(new ExceptionAuthenticationEntryPoint()));
