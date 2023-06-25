@@ -31,6 +31,10 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 }
 ```
 ## Spring Security: Exception Handling
+
+![Exception Handling]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/eleonv/security-rol-back/blob/main/raw/AccessDeniedHandling.png))
+
+
 Las excepciones personalizadas se lanzará si:
 + Si el usuario no está autenticado, entonces, se invocará a _CustomAuthenticationEntryPoint_.
 + Si el usuario no está autorizado para ver un recurso determinado, entonces, se invocará a _CustomAccessDeniedHandler_.
