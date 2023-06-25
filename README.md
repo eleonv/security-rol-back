@@ -36,8 +36,8 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 
 Las excepciones personalizadas se lanzará si:
-+ Si el usuario no está autenticado, entonces, se invocará a _CustomAuthenticationEntryPoint_.
-+ Si el usuario no está autorizado para ver un recurso determinado, entonces, se invocará a _CustomAccessDeniedHandler_.
++ Si el usuario no está autenticado, entonces, se invocará a _CustomAuthenticationEntryPoint_ que hereda de _AuthenticationEntryPoint_.
++ Si el usuario no está autorizado para ver un recurso determinado, entonces, se invocará a _CustomAccessDeniedHandler_ que hereda de _AccessDeniedHandler_.
 
 ## Usuarios demo
 
